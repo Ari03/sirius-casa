@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sirius - Casa Inteligente </title>
+        
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="CSS/jquery-ui-slider-pips.css">
+		
+		<script src="js/jquery-2.1.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>  
+		<script src="js/jquery-ui.js"></script>
+		<script type="js/jquery-ui-slider-pips.js"></script>
+		
+    </head>
+    <body>
+                <header>
+                    <nav class="navbar navbar-inverse nav" style="background-color:#3a6eb0">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="http://sirius.etc.br/">
+                                    <img class="logo" src="img/logo.png" border="none" title="Sirius">
+                   	             </a>
+                                <a style="color:#fff" class="navbar-brand hidden-sm" href="index.html"><p class="titulo">Sirius - Grupo de Pesquisa</p></a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+
+<div class="container corpo">
+        <div class="row bloco-group">
+           <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="bloco">
+                  <a class="link-icon" data-toggle="modal" data-target="#sala-acoes"><img class="icon" src="img/sala.png"></a>
+                  </div>
+            </div>
+            <!-- Modal -->
+        	<div class="modal fade" id="sala-acoes" role="dialogue">
+             <div class="modal-dialogue modal-sm">
+        	   <!-- Modal Content -->
+                     <form method = 'post' name ='sala' acttion = 'sala_de_estar.php'>
+                     <div class="modal-content">
+      <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="modal-title">Sala</h4>
+                     </div>
+                      <div id="circles-slider">
+        								
+				<!-- Action Luz -->	
+				  <script>
+				 $("# circles-slider . ui-slider")
+    .slider({
+        max: 1,
+        value: 4
+
+    })
+    .slider("pips");
+        			
+         </script>
+ 		  <!--- action garagem -->
+   
+                   <script>
+       		</script>
+      	<div class="acao-casa"> 
+      		<p>Lâmpada</p>
+      			
+      			<div id="slider">
+      	  
+  			</div>
+   								</div>
+      	<!-- Fim da action -->	
+   				</form>
+                          </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
+                                    </div>
+                         </div>
+                            </div>
+        				</div>
+        	
+        				<!-- Fim da Modal -->	
+        				
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="bloco">
+                                <a class="link-icon" data-toggle="modal" data-target="#quarto"><img class="icon" src="img/quarto.png"> </a>
+                            </div>
+                        </div>
+
+                         <!-- Modal -->
+        	<div class="modal fade" id="quarto" role="dialogue">
+             <div class="modal-dialogue modal-sm">
+        	   <!-- Modal Content -->
+                     <form method = 'post' name ='quarto' acttion = 'quarto.php'>
+                     <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Quarto</h4>
+                                    </div>
+                                    <div class="modal-body">
+        								
+				<!-- Action Luz -->	
+				  <script>
+					  $(function() {
+					$("#slider").slider( {
+        			range :  "min" , 
+        			value :  1 , 
+             		step :  1000 , 
+        			min :  0 , 
+        			max :  5000000 , 
+        	    	slide :  function ( event , ui )  { 
+        		$ ( "input" ). val ( "$"  + ui . value ); 
+        				} 
+        							});
+        							  });
+        			
+        								  </script>
+        								  
+        								
+        								<div class="acao-casa"> 
+        									<p>Lâmpada</p>
+        									<div id="slider">
+        										<input type="hidden" name="estado">
+        									</div>
+        								</div>
+        							<!-- Fim da action -->	
+        								</form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+        				</div>
+        	
+        				<!-- Fim da Modal -->
+
+
+
+                        <!-- Aqui ficava a varanda -->
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="bloco">
+                                <a class="link-icon" data-toggle="modal" data-target="#areaServico"><img class="icon" src="img/servico.png"></a>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+        	<div class="modal fade" id="areaServico" role="dialogue">
+             <div class="modal-dialogue modal-sm">
+        	   <!-- Modal Content -->
+                     <form method = 'post' name ='servico' acttion = 'area_de_servico.php'>
+                     <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Área de serviço</h4>
+                                    </div>
+                                    <div class="modal-body">
+        								
+				<!-- Action Luz -->	
+				  <script>
+					  $(function() {
+					$("#slider").slider( {
+        			range :  "min" , 
+        			value :  1 , 
+             		step :  1000 , 
+        			min :  0 , 
+        			max :  5000000 , 
+        	    	slide :  function ( event , ui )  { 
+        		$ ( "input" ). val ( "$"  + ui . value ); 
+        				} 
+        							});
+        							  });
+        			
+        								  </script>
+        								  <!--- action garagem -->
+        		  
+        		                    <script>
+
+        		                   </script>
+        								
+        								<div class="acao-casa"> 
+        									<p>Lâmpada</p>
+        									<div id="slider">
+        										<input type="hidden" name="estado">
+        									</div>
+        								</div>
+        							<!-- Fim da action -->	
+        							</form>
+        								
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+        				</div>
+        	
+        				<!-- Fim da Modal -->	
+                    </div>
+
+                    <div class="row bloco-group">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="bloco">
+                                <a class="link-icon" data-toggle="modal" data-target="#Cozinha"><img class="icon" src="img/cozinha.png"></a>
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+        	<div class="modal fade" id="Cozinha" role="dialogue">
+             <div class="modal-dialogue modal-sm">
+        	   <!-- Modal Content -->
+                     <form method = 'post' name ='cozinha' acttion = 'cozinha.php'>
+                     <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Cozinha</h4>
+                                    </div>
+                                    <div class="modal-body">
+        								
+				<!-- Action Luz -->	
+				  <script>
+					  $(function() {
+					$("#slider").slider( {
+        			range :  "min" , 
+        			value :  1 , 
+             		step :  1000 , 
+        			min :  0 , 
+        			max :  5000000 , 
+        	    	slide :  function ( event , ui )  { 
+        		$ ( "input" ). val ( "$"  + ui . value ); 
+        				} 
+        							});
+        							  });
+        			
+        								  </script>
+        								  <!--- action garagem -->
+        		  
+        		                    <script>
+
+        		                   </script>
+        								
+        								<div class="acao-casa"> 
+        									<p>Lâmpada</p>
+        									<div id="slider">
+        										<input type="hidden" name="estado">
+        									</div>
+        								</div>
+        							<!-- Fim da action -->	
+        							</form>	
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+        				</div>
+        	
+        				<!-- Fim da Modal -->	
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="bloco">
+                                <a class="link-icon" data-toggle="modal" data-target="#garagem"><img class="icon" src="img/garagem.png"></a>    
+                            </div>
+                        </div>
+
+                        <!-- Modal -->
+        	<div class="modal fade" id="garagem" role="dialogue">
+             <div class="modal-dialogue modal-sm">
+        	   <!-- Modal Content -->
+                     <form method = 'post' name ='garagem' acttion = 'garagem.php'>
+                     <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Garagem</h4>
+                                    </div>
+                                    <div class="modal-body">
+        								
+				<!-- Action Luz -->	
+				  <script>
+					  $(function() {
+					$("#slider").slider( {
+        			range :  "min" , 
+        			value :  1 , 
+             		step :  1000 , 
+        			min :  0 , 
+        			max :  5000000 , 
+        	    	slide :  function ( event , ui )  { 
+        		$ ( "input" ). val ( "$"  + ui . value ); 
+        				} 
+        							});
+        							  });
+        			
+        								  </script>
+        								  <!--- action garagem -->
+        		  
+        		                    <script>
+
+        		                   </script>
+        								
+        								<div class="acao-casa"> 
+        									<p>Lâmpada</p>
+        									<div id="slider">
+        										<input type="hidden" name="estado">
+        									</div>
+        								</div>
+        							<!-- Fim da action -->	
+        							</form>	
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+        				</div>
+        	
+        				<!-- Fim da Modal -->	
+
+                        <!-- Aqui ficava o jardim -->
+
+                        <!-- Aqui ficava a piscina -->
+                    </div>
+                </div>
+
+                <footer>
+                    <nav class="navbar navbar-inverse">
+                        <div class="container">
+                            <center>
+                                <span class="texto-rodape">Copyright © 2015 Sirius Grupo de Pesquisa.<br>Todos os direitos reservados.</span>
+        						<br><br><a href='testes/teste.html'>Faça teste</a>
+                            </center>
+                        </div>
+                    </nav>
+                </footer>
+            </body>
+        </html>
+
+
+

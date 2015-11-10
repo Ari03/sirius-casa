@@ -1,0 +1,136 @@
+.nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@font-face {
+	font-family: titillium;
+	src:url("fonts/Titillium-Thin.otf");
+}
+
+
+#acao-casa,
+#areaServico,
+#Cozinha,
+#garagem{
+	display: inline-block;	
+  width:300px;
+
+}
+#quarto{
+  display: inline-block;  
+  width:300px;
+
+}
+
+
+#slider{
+	  width: 460px;
+    left: 90px;	
+
+}
+.ui-slider-horizontal{
+    height: 44px;
+    width: 80px;
+    left: 120px;
+     
+}
+.fonte-slide{
+  font-size: 44px;
+  position: absolute;
+  top:-1px;
+}
+p {
+	 font-size: 14pt;
+    position: absolute;
+    top: 9px;
+}
+
+.navbar {
+  border-radius: 4	px;
+}
+
+.modal-dialogue {
+	
+}
+
+p.titulo {
+	margin-top: 22px;
+    font-family: sans-serif;	
+	font-size: 16px;
+}
+
+.bloco {
+    margin-top: 30px;
+    color: white;
+   /* background-color: black; /* cor anterior -> black */
+    height: 150px;
+    padding: 10px 10px 10px 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+}
+
+.icon {
+	height: 150px;
+	left: 25%;
+  	margin-left: -21px;
+  	position: absolute;
+  	margin-top: -36px;
+  	top: 36%;
+  	width: 193px;
+}
+
+.navbar navbar-inverse nav {
+	background-color: #3a6eb0;
+}
+
+.bloco-group {
+
+}
+
+.corpo {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.texto-rodape {
+    color: #808080;
+	font-family: titillium;
+    font-size: 10pt;
+    position: relative;
+    top: 9px;
+
+}
+
+.pad {
+    padding-top:15px;
+    padding-bottom:15px;
+
+}
+
+img.logo {
+	position: relative;
+	bottom: 26px;
+	height: 63px;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+#input-select,
+#input-number {
+	padding: 7px;
+	margin: 15px 5px 5px;
+	width: 70px;
+}
+
+#slider .ui-slider-range {
+
+  background: #999;
+
+
+}
